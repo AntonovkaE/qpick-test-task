@@ -1,0 +1,29 @@
+.section {
+  width: 90%;
+  max-width: 1110px;
+  margin: 0 auto 28.35px;
+}
+
+.section:last-child {
+  margin: 0 auto 20px;
+}
+.section__heading {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #838383;
+  margin: 0 auto 20px 0;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
+  justify-items: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}

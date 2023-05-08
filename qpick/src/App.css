@@ -1,3 +1,11 @@
 .link {
   text-decoration: none;
 }
+
+.App {
+  background: #EAEAEA;
+}
+
+body {
+  margin: 0;
+}

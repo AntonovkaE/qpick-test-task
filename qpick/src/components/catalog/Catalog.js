@@ -3,8 +3,8 @@ import Product from '../product/Product';
 
 function Catalog({ headphones, sectionName, addInBasket }) {
   return (
-    <section>
-      <h2>{sectionName}</h2>
+    <section className="section ">
+      <h2 className="section__heading">{sectionName}</h2>
       <ul className="catalog">
         {headphones.map((product, i) => (
           <Product key={product.id} product={product} addInBasket={addInBasket}/>
