@@ -14,14 +14,14 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <>
       <Header/>
       {Object.entries(headphones).map((section, index) => {
         return <Catalog key={index} headphones={section[1]} addInBasket={addInBasket} sectionName={section[0]}/>;
       })
       }
       <Footer/>
-    </div>
+    </>
   );
 }
 

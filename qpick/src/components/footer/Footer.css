@@ -1,5 +1,5 @@
 .footer {
-  margin: 0 auto;
+  margin: 20px auto 0;
   background: #FFFFFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px 30px 0 0;
@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 126px;
 }
 
@@ -90,15 +91,22 @@
   margin-top: 4px;
 }
 
+@media screen and (max-width: 1280px){
+  .footer__column_contacts {
+    margin-left: 5%;
+  }
+
+}
+
 
 @media screen and (max-width: 768px) {
   .footer {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .footer__column {
-    margin-left: 0;
+    margin-left: 2%;
     margin-right: 0;
   }
 }

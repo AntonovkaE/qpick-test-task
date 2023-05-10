@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
   max-width: 1110px;
   padding: 15px 6.2px 15px 0;
-  margin: 0 auto 28px;
+  margin: 0 auto
 }
 
 .header__logo {
