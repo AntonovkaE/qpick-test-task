@@ -21,7 +21,7 @@
 .catalog {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 350px));
-  justify-items: center;
+  justify-content: center;
   gap: 30px;
   list-style: none;
   padding: 0;
