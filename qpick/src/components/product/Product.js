@@ -1,8 +1,12 @@
 import './Product.css';
 import startIcon from '../../assets/img/star.svg'
 
-function Product({ product }) {
+function Product({ product, addInCart }) {
   const { img, title, price, rate, old_price } = product;
+  function buy (e) {
+    e.preventDefault()
+    addInCart(product)
+  }
   return (
     <li className="product">
       <img className="product__img" src={img}/>
@@ -18,7 +22,7 @@ function Product({ product }) {
           <div className="product__rate">
             <img className="product__rate-icon" alt="starIcon" src={startIcon}/> {rate}
           </div>
-          <button type='button' className="product__buy">Купить</button>
+          <button onClick={buy} type='button' className="product__buy">Купить</button>
         </div>
       </div>
     </li>
