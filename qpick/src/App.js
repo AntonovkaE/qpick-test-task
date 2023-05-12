@@ -1,3 +1,4 @@
+import './utils/fonts.css';
 import './App.css';
 import { headphones } from './utils/headphones';
 import Catalog from './components/catalog/Catalog';
