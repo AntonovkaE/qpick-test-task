@@ -19,21 +19,21 @@ function ProductInCart({ product, addInCart, decreaseCount, removeFromCart}) {
 
   return (
     <li className="cart__item">
-      <button onClick={removeItem} className="cart__delete-button" type="button">
+      <button onClick={removeItem} className="button cart__delete-button" type="button">
         <img src={deleteIcon} alt="delete"/>
       </button>
       <div className="cart__img-wrapper">
         <img className="cart__item-img" src={img} alt={title}/>
         <div className="cart__buttons-ctrl">
           <button onClick={increaseItemCount}
-                  className="cart__button cart__button_ctrl cart__button_add-item">
+                  className="button  cart__button cart__button_ctrl cart__button_add-item">
             <div className="icon-plus icon-plus_h"></div>
             <div className="icon-plus icon-plus_v"></div>
             <div></div>
           </button>
           <p>{count}</p>
           <button onClick={decreaseItemCount}
-                  className="cart__button cart__button_ctrl cart__button_delete-item">
+                  className="button cart__button cart__button_ctrl cart__button_delete-item">
             <div className="icon-plus icon-plus_h"></div>
           </button>
         </div>

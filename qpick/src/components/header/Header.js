@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 function Header({cartCounter = 2, favoriteCounter=2}) {
   return (
     <header className="header">
-      <a className='header__logo link' href='#'>
+      <Link className='header__logo link' to="/">
         <h1 className="header__logo">QPICK</h1>
-      </a>
+      </Link>
       <nav className="header__nav">
         <Link to='/favorite' className="header__favorite-link">
           <img src={heartIcon} alt="избранное" className="header__favorite"/>

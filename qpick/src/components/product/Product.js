@@ -22,7 +22,7 @@ function Product({ product, addInCart }) {
           <div className="product__rate">
             <img className="product__rate-icon" alt="starIcon" src={startIcon}/> {rate}
           </div>
-          <button onClick={buy} type='button' className="product__buy">Купить</button>
+          <button onClick={buy} type='button' className="button product__buy">Купить</button>
         </div>
       </div>
     </li>
