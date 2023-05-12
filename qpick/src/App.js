@@ -61,11 +61,11 @@ function App() {
     <>
       <Header cartCounter={itemQuantity}/>
       <Routes>
-        <Route path="/" element={<Catalog headphones={headphones} addInCart={addInCart}/>}/>
         <Route path="/cart" element={<Cart addInCart={addInCart} removeFromCart={removeFromCart}
                                            decreaseCount={decreaseCount} cart={cart}
                                            countItemChanging={countItemChanging}
                                            cleanCart={cleanCart}/>}/>
+        <Route path="*" element={<Catalog headphones={headphones} addInCart={addInCart}/>}/>
       </Routes>
 
       <Footer/>

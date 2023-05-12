@@ -2,6 +2,7 @@ import './Product.css';
 import startIcon from '../../assets/img/star.svg';
 
 function Product({ product, addInCart }) {
+
   const { img, title, price, rate, old_price } = product;
 
   function buy(e) {
