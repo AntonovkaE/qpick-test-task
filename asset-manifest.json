@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/qpick-test-task/static/css/main.7494ebf0.css",
+    "main.js": "/qpick-test-task/static/js/main.52a4907e.js",
+    "static/js/787.d1ef4d02.chunk.js": "/qpick-test-task/static/js/787.d1ef4d02.chunk.js",
+    "static/media/VK.svg": "/qpick-test-task/static/media/VK.200332db80feb34aac09a5f6d7d91e63.svg",
+    "static/media/Whatsapp.svg": "/qpick-test-task/static/media/Whatsapp.8dc15f232a985aef74ed03315e7a3148.svg",
+    "static/media/cart.svg": "/qpick-test-task/static/media/cart.0755738f949b36eb371956870cd1c963.svg",
+    "static/media/lang.svg": "/qpick-test-task/static/media/lang.797e781eca4339c28cabcdd5b54c29bb.svg",
+    "static/media/Telegram.svg": "/qpick-test-task/static/media/Telegram.17041232c86fdbc127e2f87541348769.svg",
+    "static/media/Vector-2.svg": "/qpick-test-task/static/media/Vector-2.c3b466f51641c238a464efcaaee70ebf.svg",
+    "index.html": "/qpick-test-task/index.html",
+    "static/media/heart.svg": "/qpick-test-task/static/media/heart.2cf318804803b4137ce14265bbc87c6a.svg",
+    "static/media/star.svg": "/qpick-test-task/static/media/star.a43f1fcddc9753cf027860154e0a0029.svg",
+    "main.7494ebf0.css.map": "/qpick-test-task/static/css/main.7494ebf0.css.map",
+    "main.52a4907e.js.map": "/qpick-test-task/static/js/main.52a4907e.js.map",
+    "787.d1ef4d02.chunk.js.map": "/qpick-test-task/static/js/787.d1ef4d02.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7494ebf0.css",
+    "static/js/main.52a4907e.js"
+  ]
+}
