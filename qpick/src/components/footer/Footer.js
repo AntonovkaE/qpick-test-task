@@ -3,6 +3,7 @@ import langIcon from '../../assets/img/lang.svg';
 import vkIcon from '../../assets/img/VK.svg';
 import telegramIcon from '../../assets/img/Telegram.svg';
 import whatsappIcon from '../../assets/img/Whatsapp.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -11,13 +12,13 @@ function Footer() {
       <nav className="nav footer__nav footer__column">
         <ul className="list nav__list">
           <li className="nav__link">
-            Избранное
+            <Link className="nav__link link" to="/">Избранное</Link>
           </li>
           <li className="nav__link">
-            Корзина
+            <Link className="nav__link link" to="/">Корзина</Link>
           </li>
           <li className="nav__link">
-            Контакты
+            <Link className="nav__link link" to="/">Контакты</Link>
           </li>
         </ul>
       </nav>
