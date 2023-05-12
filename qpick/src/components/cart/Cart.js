@@ -7,8 +7,10 @@ import ProductInCart from '../productInCart/ProductInCart';
 
 function Cart({ cart, addInCart, decreaseCount, removeFromCart, countItemChanging }) {
   const [result, setResult] = useState(cart.reduce((acc, cur) => acc + cur.count*cur.price, 0));
+  const [isButtonActive, setIsButtonActive] = useState(cart.length > 0)
   useEffect(() => {
     setResult(cart.reduce((acc, cur) => acc + cur.count*cur.price, 0))
+    setIsButtonActive(cart.length > 0)
   }, [cart, countItemChanging])
   return (
     <div className="cart">
@@ -21,8 +23,7 @@ function Cart({ cart, addInCart, decreaseCount, removeFromCart, countItemChangin
           <p className="cart__amount">ИТОГО </p>
           <p className="cart__amount">₽ {result}</p>
         </div>
-
-        <button type="button" className="button cart__submit">Перейти к оформлению</button>
+        <button disabled={!isButtonActive} type="button" className="button cart__submit">{isButtonActive ? 'Перейти к оформлению' : 'Корзина пуста'}</button>
       </div>
     </div>
 
