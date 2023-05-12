@@ -69,6 +69,7 @@
   border-radius: 20px;
   padding: 22px 12px;
 }
+
 .cart__buttons-ctrl {
   display: flex;
   flex-direction: row;
@@ -76,6 +77,7 @@
   width: 100%;
   justify-content: space-around;
 }
+
 .cart__button_ctrl {
   border: none;
   width: 35.17px;
@@ -88,14 +90,14 @@
 
 }
 
-.icon-plus  {
+.icon-plus {
   position: absolute;
   background: #FFFFFF;
   width: 14px;
   height: 2px;
 }
 
-.icon-plus_v{
+.icon-plus_v {
   transform: rotate(-90deg);
 }
 

@@ -22,15 +22,18 @@
   position: relative;
   margin-right: 45px;
 }
+
 .header__favorite {
   width: 22px;
   height: 20px;
   /*background: #838383;*/
   position: relative;
 }
+
 .header__cart-link {
   position: relative;
 }
+
 .header__cart {
   position: relative;
   /*background: #838383;*/

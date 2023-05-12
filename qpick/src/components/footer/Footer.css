@@ -91,7 +91,7 @@
   margin-top: 4px;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
   .footer__column_contacts {
     margin-left: 5%;
   }

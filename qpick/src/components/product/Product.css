@@ -63,6 +63,7 @@
 .product__price {
   margin: 0;
 }
+
 .product__price_old {
   font-weight: 600;
   font-size: 13px;
@@ -71,6 +72,7 @@
 
   text-decoration-line: line-through;
 }
+
 .product__description {
   padding: 0;
   display: flex;

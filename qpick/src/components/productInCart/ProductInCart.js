@@ -1,13 +1,12 @@
 import './ProductInCart.css';
 import deleteIcon from '../../assets/img/Vector-2.svg';
 
-function ProductInCart({ product, addInCart, decreaseCount, removeFromCart}) {
+function ProductInCart({ product, addInCart, decreaseCount, removeFromCart }) {
   function increaseItemCount() {
     addInCart(product);
   }
 
   function decreaseItemCount(e) {
-
     decreaseCount(product);
   }
 

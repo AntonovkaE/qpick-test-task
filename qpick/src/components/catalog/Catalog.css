@@ -9,6 +9,7 @@
 .section:last-child {
   margin: 0 auto 20px;
 }
+
 .section__heading {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-style: normal;
