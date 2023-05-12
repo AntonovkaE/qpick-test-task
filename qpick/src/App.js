@@ -4,31 +4,43 @@ import Catalog from './components/catalog/Catalog';
 import { useState, useEffect } from 'react';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import { Routes, Route } from 'react-router-dom';
+import Cart from './components/cart/Cart';
 
 function App() {
   const [cart, setCart] = useState(localStorage.cart ? JSON.parse(localStorage.cart) : []);
-  const [itemQuantity, setItemQuantity] = useState(localStorage.cart ? JSON.parse(localStorage.cart).length : 0)
-  // const cartArray = cart.length === 0 ? [] : cart
-  console.log(localStorage.cart)
+  const [fullCart, setFullCart] = useState(localStorage.fullCart ? JSON.parse(localStorage.fullCart) : [])
+  const [itemQuantity, setItemQuantity] = useState(localStorage.cart ? JSON.parse(localStorage.cart).reduce((acc, curr) => {
+    return acc + curr.count;}, 0) : 0)
+
   function addInCart(product) {
-   // cartArray.push(product)
-    setCart([product, ... cart]);
-    // console.log(cartArray)
-    // console.log(localStorage.cart)
+    setFullCart([product, ...fullCart])
+    if (!cart.includes(product)) {
+      product.count = 1
+      setCart([product, ... cart]);
+    } else {
+      cart.map((item) => {
+        if (item.id === product.id) {
+          item.count = item.count + 1
+        }
+      })
+    }
   }
   useEffect(()=> {
-    setItemQuantity(cart.length)
+    setItemQuantity(fullCart.length)
+    // setItemQuantity(cart.reduce((acc, curr) => acc + curr.count, 0))
     localStorage.setItem('cart', JSON.stringify(cart));
-  }, [cart])
+    localStorage.setItem('fullCart', JSON.stringify(fullCart))
+  }, [fullCart])
 
   return (
     <>
       <Header cartCounter={itemQuantity}/>
-      {Object.entries(headphones).map((section, index) => {
-        return <Catalog key={index} headphones={section[1]} addInCart={addInCart}
-                        sectionName={section[0]}/>;
-      })
-      }
+      <Routes>
+        <Route path='/' element={<Catalog headphones={headphones} addInCart={addInCart}/>}/>
+        <Route path='/cart' element={<Cart itemQuantity={itemQuantity} cart={cart}/>}/>
+      </Routes>
+
       <Footer/>
     </>
   );
